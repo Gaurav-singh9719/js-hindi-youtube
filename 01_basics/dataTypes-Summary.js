@@ -40,3 +40,29 @@ console.log(typeof outsideTemp); // object (null is considered an object in JS)
 console.log(typeof userEmail); // undefined
 console.log(typeof id); // symbol
 console.log(typeof bigNumber); // bigint
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive types) , Heap (Reference types)
+
+let myYoutubename = "gauravsinghdotcom";
+
+let anothername = "myYoutubeName";
+anothername = "gsCoder";
+
+console.log(myYoutubename); // gauravsinghdotcom
+console.log(anothername); // gsCoder
+
+let userOne ={
+    email: "user@google.com",
+    upi: "user@upi",
+}
+
+let userTwo = userOne; // Reference to the same object
+userTwo.email = "gaurav@google.com"; // Modifying userTwo will also modify userOne
+
+console.log(userOne.email); 
+console.log(userTwo.email); 
+  
+
+
